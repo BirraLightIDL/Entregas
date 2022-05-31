@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.li__general{
+    padding:2rem;
+    list-style:none;
+    display:inline-flex;
+    color: black;
+}
+
+.anchor__color{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+ 
+.anchor__color:hover{
+    color: aqua;
+}
+
+.img__logo{
+    border-radius: 15px;
+    width: 120px;
+    padding: 5px;
+    margin: 50px;
+    background-color:black
+}
+
+.body__general{
+    background-image:url(../img/picography-spacex-rocket-trail-768x512.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body__general:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(black,silver);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.img__centroPag{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 20px;
+}
+.img__centroPag--color{
+    border-style: inset; 
+    border-width:5px;
+    border-radius: 10px;
+    border-color:antiquewhite;
+}
+
+.p__index{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.suscripcion__main{
+    color: black;
+    padding: 10px;
+    border-style: outset;
+    border-radius: 8px;
+
+}
+
+.li__footer{
+    list-style: none;
+    padding: 10px;
+    color:black;
+}
+
+.li__footer--link{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.li__footer--link:hover{
+    color: aquamarine;
+}
+
+.header__fondo{
+
+}
+
+.main__color{
+
+}
+
+.footer__fondo{
+
+}
+
+
+
+/*-contacto-page-*/
+
+.section__class{
+    background-color: bisque;
+    padding: 10px 10px 10px 700px;
+}
+
+.div__main_cont{
+    background-color: bisque;
+    padding: 20px 20px 20px 700px;
+}
+
+.anchor__contac{
+    text-decoration: none;
+    list-style: none;
+    color: blueviolet;
+}
+
+.anchor__contac:hover{
+    color: aquamarine;
+}
+
+
+/*-vehiculos-page-*/
+
+.body__general--vehiculos{
+    background-image: url(../img/picography-full-moon-landscape-768x512.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body__general--vehiculos:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(white,white);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.header__vehiculos{
+    display: flex;
+    justify-content: center;
+}
+
+.encabezado{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.nav__general{
+    
+}
+
+.pictures{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+.div_1{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+}
+
+.div_2{
+    display: flex;
+    padding: 50px; 
+    flex-direction: column;
+}
+
+.div_3{
+    display: flex;
+    padding: 50px; 
+    flex-direction: column;
+    color: white;
+}
+
+.div_4{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    color: white;
+}
+.p__vehiculos{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 40px;
+    justify-content: flex-start;
+} 
+
+button{
+    font-size:0,5rem;
+    font: bold;
+    padding: 10px;
+    border-radius: 3px;
+    border:  1px solid silver;
+    color: black;
+    background-color: beige;
+}
+
+
+
+/*Servicios*/
+
+.body__general{
+    
+}
+
+.header__servicios{
+    display: flex;
+    justify-content: center;
+}
+
+.menu__servicios{
+    background-color: bisque;
+    display: flex;
+    justify-content:center;
+}
+
+.div__servicios{
+    padding: 5rem;
+}
+
+/*Preguntas frecuentes*/
+
+.header__pregFrec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: large;
+}
+
+.section__pregFrec{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.li__pregFrec{
+    list-style: none;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.li__respuesta{
+    list-style: none;
+    color: black;
+    font-size:small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p__pregunta{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Media Query*/
+@media (max-width:350px) {
+    
+    .body__general{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .img__centroPag{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .header__fondo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body__general--vehiculos{
+        display: flex;
+        flex-direction: column;
+    }
+    .pictures{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .menu__servicios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__pregFrec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_general_contacto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__class{
+        padding: 20px 20px 20px 0px;
+    }
+
+    .div__main_cont{
+        padding: 20px 20px 20px 0px;
+    }
+    
+}
+
+
+
